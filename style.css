@@ -1,0 +1,217 @@
+:root{
+    --light-slite-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue:  hsla(241, 72%, 46%, 0);
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobal-blue: hsl(234, 85%, 45%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.bold{
+    font-weight: 700;
+}
+.opacity{
+    opacity: .4;
+}
+.opacity2{
+    opacity: .8;
+}
+.green{
+    color: hsl(166, 100%, 37%);
+}
+.blue{
+    color: hsl(234, 85%, 45%);
+}
+.yellow{
+    color: hsl(39, 100%, 56%);
+}
+.red{
+    color: var(--light-red);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-wrapper{
+    height: 52%;
+    width: 35%;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    min-width: 500px;
+    min-height: 450px;
+}
+.left-side{
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    background: rgb(50,42,234);
+    background: linear-gradient(0deg, rgba(50,42,234,1) 0%, rgba(96,64,253,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-5px);
+}
+.left-side h3{
+    margin-top: 35px;
+    opacity: .7;
+    font-size: 1.4rem;
+}
+.left-side p{
+    opacity: .7;
+    max-width: 230px;
+}
+.left-side h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.circle{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(75,35,202);
+    background: linear-gradient(180deg, rgba(75,35,202,1) 60%, rgba(72,53,241,1) 100%); 
+}
+.circle h1{
+font-size: 4.2rem;
+}
+.circle p{
+    opacity: .5;
+}
+.right-side{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 30px 30px  0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.summary{
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.summary h2{
+    opacity: .8;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.label{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px ;
+}
+.label-1:nth-child(1){
+    opacity: .1 !important;
+}
+.label div{
+    display: flex;
+    gap: 10px;
+}
+.label p{
+    font-weight: 700;
+}
+.label-1{
+    background-color: hsla(0, 100%, 67%, .1);
+}
+.label-2{
+    background-color: hsl(39, 100%, 56%,.1);
+}
+.label-3{
+    background-color: hsl(166, 100%, 37%,.1);
+}
+.label-4{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+.label-5{
+    cursor: pointer;
+    color: white;
+    background-color: #303B59;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.label-5:hover{
+    background: rgb(75,35,202);
+    background: linear-gradient(180deg, rgba(75,35,202,1) 60%, rgba(72,53,241,1) 100%); 
+
+}
+
+
+
+.attribution { font-size: 11px;margin-top: 50px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+@media (max-height: 680px), screen and (orientation: portrait) {
+    .card-wrapper{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .left-side{
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+    }
+    .right-side{
+        width: 100%;
+    }
+    .left-side p{
+        max-width: 290px;
+        margin-bottom: 30px;
+    }
+    .left-side h2{
+        transform: translateY(15px);
+    }
+    .circle{
+        height: 150px;
+        width: 150px;
+    }
+    .circle h1{
+        margin-top: 20px;
+    }
+    .label{
+        height: 70px;
+    }
+    .attribution{
+        transform: translateY(60px);
+    }
+
+   
+    
+  }
+  
